@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <title>코딩 네컷 : 소중한 사진첩</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #c9c6c5;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px;
+      }
+      .h-title {
+        color: dodgerblue;
+        font-weight: 500;
+      }
+      .version {
+        color: dodgerblue;
+        font-weight: 500;
+      }
+      .container {
+        width: 390px;
+        background-color: white;
+        height: 100%;
+        padding-top: 70px;
+      }
+      .photo-frame {
+        border: 1px solid black;
+        background-color: white;
+        margin: 15px 30px;
+        height: 200px;
+        background-size: cover;
+        position: relative;
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Sofia", sans-serif;
+      }
+      .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: dodgerblue;
+      }
+      .f-date {
+        font-size: 15px;
+        font-weight: 500;
+        color: dodgerblue;
+      }
+      #header {
+        background-color: aqua;
+      }
+      .audio {
+        width: 100%;
+      }
+      #image1 {
+        background-image: url("./images/img1.jpeg");
+      }
+      #image2 {
+        background-image: url("./images/img2.jpeg");
+      }
+      #image3 {
+        background-image: url("./images/img3.png");
+      }
+      #image4 {
+        background-image: url("./images/img4.jpeg");
+      }
+      .photo-description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+        width: max-content;
+      }
+      .video {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="h-title">코딩네컷 + 영상한컷</span>
+        <span class="version">v1</span>
+      </div>
+      <div class="photo-frame" id="image1">
+        <span class="photo-description">2022.04. 월미도에서 우리!</span>
+      </div>
+      <div class="photo-frame" id="image2">
+        <span class="photo-description">
+          2022.07. 무대 준비하면서 긴장했었잖아 ><
+        </span>
+      </div>
+      <div class="photo-frame" id="image3">
+        <span class="photo-description"
+          >2021.11. 많이 변하긴 했다 그치 ㅠㅠ</span
+        >
+      </div>
+      <div class="photo-frame" id="image4">
+        <span class="photo-description">2020.12. 추억이 새록새록 🙏</span>
+      </div>
+      <div class="photo-frame">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/agYZbSt-3LY"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="footer">
+        <p class="f-title">Happy Lunch Time</p>
+        <p class="f-date">2023.01.23</p>
+      </div>
+    </div>
+  </body>
+</html>
